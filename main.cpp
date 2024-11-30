@@ -1,18 +1,14 @@
 #include <stdio.h>
-#define PI 3.14159
-
-float oblicz_powierzchnie(float srednica) {
-    float promien = srednica / 2;
-    return PI * promien * promien;
-}
 
 int main() {
-    float srednica;
-    printf("Podaj srednice pizzy: ");
-    scanf_s("%f", &srednica);
+    int kod_ascii;
 
-    float powierzchnia = oblicz_powierzchnie(srednica);
-    printf("Powierzchnia pizzy wynosi: %.2f jednostek kwadratowych\n", powierzchnia);
+    printf("Podaj kod ASCII: ");
+    scanf_s("%d", &kod_ascii);
+
+    char znak = (char)kod_ascii;
+
+    printf("Znak odpowiadający kodowi ASCII %d to: %c\n", kod_ascii, znak);
 
     return 0;
 }
