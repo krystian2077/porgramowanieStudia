@@ -8,6 +8,8 @@ int main(void)
     x = x*y; /* wiersz 9 */
 
     printf("%d %d\n", x, y);
+    printf("%d %d\n", x, y);
+
 
     return 0;
 }
