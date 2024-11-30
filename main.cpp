@@ -1,10 +1,18 @@
 #include <stdio.h>
-int main(void)
-{
-    printf("Krystian Potaczek\n");
+#define PI 3.14159
 
-    printf("Krystian\nPotaczek");
+float oblicz_powierzchnie(float srednica) {
+    float promien = srednica / 2;
+    return PI * promien * promien;
+}
 
-    printf("Krystian");
-    printf("Potaczek");
+int main() {
+    float srednica;
+    printf("Podaj srednice pizzy: ");
+    scanf_s("%f", &srednica);
+
+    float powierzchnia = oblicz_powierzchnie(srednica);
+    printf("Powierzchnia pizzy wynosi: %.2f jednostek kwadratowych\n", powierzchnia);
+
+    return 0;
 }
