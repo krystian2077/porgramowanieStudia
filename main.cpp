@@ -9,6 +9,8 @@ int main(void)
 
     printf("%d %d\n", x, y);
     printf("%d %d\n", x, y);
+    printf("%d %d\n", x, y);
+
 
 
     return 0;
