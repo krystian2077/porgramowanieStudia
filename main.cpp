@@ -6,6 +6,8 @@ int main(void)
     y = 5; /* wiersz 7 */
     y = x + y; /* wiersz 8 */
     x = x*y; /* wiersz 9 */
+
     printf("%d %d\n", x, y);
+
     return 0;
 }
